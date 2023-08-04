@@ -22,8 +22,7 @@ public class Assembly implements IElement {
                     .stream()
                     .flatMap(arg1 -> arg1.getKey().getSpecification().entrySet()
                             .stream()
-                            .map(arg2 -> Map.entry(arg2.getKey(), arg1.getValue() * arg2.getValue()))
-                    )
+                            .map(arg2 -> Map.entry(arg2.getKey(), arg1.getValue() * arg2.getValue())))
                     .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (first, second) -> first + second));
     }
 
