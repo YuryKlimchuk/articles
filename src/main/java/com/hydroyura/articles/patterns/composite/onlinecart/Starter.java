@@ -18,7 +18,7 @@ public class Starter {
 
         IProduct cart = new ProductKit(Arrays.asList(productKitA, productKitB, productSingleE, productSingleF), "cart");
 
-        System.out.println("cart cost = " + cart.getCost());
+        System.out.println("Total cost = " + cart.getCost());
     }
 
 }
